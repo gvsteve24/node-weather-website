@@ -8,7 +8,7 @@ const forecast = (latitude, longitude, callback)=>{
         }else if(body.error){
             callback('unable to find coordiates', undefined)
         }else{
-            callback(undefined, body.daily.summary+body.daily.data[0].summary+'It is currently '+body.currently.temperature+'degrees out. There is a '+body.currently.precipProbability+'% chances of rain.')
+            callback(undefined, body.daily.summary+' It is currently '+body.currently.temperature+'degrees out. There is a '+body.currently.precipProbability+'% chances of rain.'+' Highest temperature is '+body.daily.data[0].temperatureMax+'degree and lowest temperature is '+body.daily.data[0].temperatureMin)
         }
     })
 }

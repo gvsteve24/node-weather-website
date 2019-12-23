@@ -40,4 +40,14 @@ header a {
     width: 600px;
 }
 
-.main c
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #888888;
+    background: #888888;
+}
